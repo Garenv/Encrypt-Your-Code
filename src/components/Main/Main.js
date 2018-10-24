@@ -97,7 +97,6 @@ class Main extends Component {
                     break;
                 default:
                     encryptedValue += " ";
-
             }
         }
         document.getElementById("res").innerHTML = encryptedValue;
