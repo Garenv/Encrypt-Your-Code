@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Main.css';
+import Title from '../../containers/Title/Title';
 
 class Main extends Component {
     constructor(props) {
@@ -106,10 +107,17 @@ class Main extends Component {
     render() {
         return(
             <div>
-                <textarea placeholder="type something" id="inputText"/>
-                <br/>
-                <button onClick={() => this.encrypt()}>Click to encrypt</button>
-                <h1 id="res">{this.state.encryptedValue}</h1>
+                <Title/>
+                <div className="entire">
+                    <body className="boxSkull">
+                        <div className="boxSkeleton">
+                            <textarea placeholder="type something" id="inputText" />
+                            <br/>
+                            <button onClick={() => this.encrypt()}>Click to encrypt</button>
+                            <h1 id="res">{this.state.encryptedValue}</h1>
+                        </div>
+                    </body>
+                </div>
             </div>
         );
     }
