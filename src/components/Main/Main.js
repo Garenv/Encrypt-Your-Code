@@ -1,16 +1,26 @@
 import React, { Component } from 'react';
 import './Main.css';
-// import Title from '../../containers/Title/Title';
 import EncryptButton from '../../containers/ButtonEncrypt/ButtonEncrypt';
+import Modal from '../../components/Backdrop/Backdrop';
+import Backdrop from '../../components/Modal/Modal';
 
 class Main extends Component {
     constructor(props) {
         super(props);
 
         this.state = {
-            encryptedValue: null
+            encryptedValue: null,
+            modalIsOpen: false
         };
     }
+
+    showModal = () => {
+        this.setState({modalIsOpen: true});
+    };
+
+    closeModal = () => {
+        this.setState({modalIsOpen: false})
+    };
 
     encrypt = () => {
         let input = document.getElementById("inputText").value;
@@ -40,7 +50,7 @@ class Main extends Component {
                     encryptedValue += "&";
                     break;
                 case "h":
-                    encryptedValue += "*";
+                    encryptedValue += "*!~~~~~";
                     break;
                 case "i":
                     encryptedValue += "(";
@@ -58,7 +68,7 @@ class Main extends Component {
                     encryptedValue += "=";
                     break;
                 case "n":
-                    encryptedValue += "||||||||";
+                    encryptedValue += "||`|1|~~``|";
                     break;
                 case "o":
                     encryptedValue += "(}}|{}";
@@ -94,7 +104,7 @@ class Main extends Component {
                     encryptedValue += "847938ouihf";
                     break;
                 case "z":
-                    encryptedValue += "8d7yg8irue";
+                    encryptedValue += "78}??!~~";
                     break;
                 default:
                     encryptedValue += " ";
@@ -113,7 +123,9 @@ class Main extends Component {
                             <h1 className="title">Encrypt your code</h1>
                             <textarea placeholder="type something" id="inputText" />
                             <br/>
-                            <EncryptButton clicked={() => this.encrypt()}/>
+                            <Modal show={this.state.modalIsOpen} closed={() => this.closeModal()}/>
+                            <Backdrop show={this.state.modalIsOpen}/>
+                            <EncryptButton clicked={() => {this.encrypt(); this.showModal()}}/>
                             <h1 id="res">{this.state.encryptedValue}</h1>
                         </div>
                     </body>
