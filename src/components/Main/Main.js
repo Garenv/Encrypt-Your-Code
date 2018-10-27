@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Main.css';
-import Title from '../../containers/Title/Title';
+// import Title from '../../containers/Title/Title';
+import EncryptButton from '../../containers/ButtonEncrypt/ButtonEncrypt';
 
 class Main extends Component {
     constructor(props) {
@@ -105,14 +106,14 @@ class Main extends Component {
 
     render() {
         return(
-            <div>
-                <Title/>
+            <div className="realEntire">
                 <div className="entire">
                     <body className="boxSkull">
                         <div className="boxSkeleton">
+                            <h1 className="title">Encrypt your code</h1>
                             <textarea placeholder="type something" id="inputText" />
                             <br/>
-                            <button onClick={() => this.encrypt()}>Click to encrypt</button>
+                            <EncryptButton clicked={() => this.encrypt()}/>
                             <h1 id="res">{this.state.encryptedValue}</h1>
                         </div>
                     </body>
