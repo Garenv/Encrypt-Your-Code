@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Main.css';
-import EncryptButton from '../../containers/ButtonEncrypt/ButtonEncrypt';
+import ButtonEncrpyt from '../../containers/ButtonEncrypt/ButtonEncrypt';
 import Modal from '../../components/Modal/Modal';
 import Backdrop from '../../components/Backdrop/Backdrop';
 
@@ -123,10 +123,15 @@ class Main extends Component {
                             <h1 className="title">Encrypt your code</h1>
                             <textarea placeholder="type something" id="inputText" />
                             <br/>
-                            <Modal show={this.state.modalIsOpen} closed={this.closeModal}/>
+                            <Modal
+                                show={this.state.modalIsOpen}
+                                closed={this.closeModal}
+                                id="res"
+                                showResult={this.state.encryptedValue}
+                            />
                             <Backdrop show={this.state.modalIsOpen}/>
-                            <EncryptButton clicked={() => {this.encrypt(); this.showModal()}}/>
-                            <h1 id="res">{this.state.encryptedValue}</h1>
+                            <ButtonEncrpyt clicked={() => {this.encrypt(); this.showModal()}}/>
+                            {/*<h1 id="res">{this.state.encryptedValue}</h1>*/}
                         </div>
                     </body>
                 </div>

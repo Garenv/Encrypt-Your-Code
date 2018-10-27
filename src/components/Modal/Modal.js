@@ -7,8 +7,8 @@ const modal = props => {
 
   return(
       <div className={cssClasses.join(' ')}>
-        <h1>Modal</h1>
         <button className="Button" onClick={props.closed}>close</button>
+        <h1 id={props.id}>{props.showResult}</h1>
       </div>
   );
 };
