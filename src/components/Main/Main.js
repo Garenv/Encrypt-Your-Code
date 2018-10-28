@@ -120,18 +120,17 @@ class Main extends Component {
                 <div className="entire">
                     <body className="boxSkull">
                         <div className="boxSkeleton">
-                            <h1 className="title">Encrypt your code</h1>
+                            {/*<h1 className="title">Encrypt your code</h1>*/}
                             <textarea placeholder="type something" id="inputText" />
                             <br/>
                             <Modal
                                 show={this.state.modalIsOpen}
+                                showResult={this.state.encryptedValue}
                                 closed={this.closeModal}
                                 id="res"
-                                showResult={this.state.encryptedValue}
                             />
                             <Backdrop show={this.state.modalIsOpen}/>
                             <ButtonEncrpyt clicked={() => {this.encrypt(); this.showModal()}}/>
-                            {/*<h1 id="res">{this.state.encryptedValue}</h1>*/}
                         </div>
                     </body>
                 </div>

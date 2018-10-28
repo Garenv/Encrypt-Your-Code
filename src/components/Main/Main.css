@@ -14,12 +14,12 @@ html, body {
 }
 
 .realEntire {
-    /*height: 55vh;*/
-    /*background-image: linear-gradient(to right bottom, rgb(15, 231, 0), rgb(8, 0, 123));*/
-    /*background-size: cover;*/
-    /*background-position: top;*/
-    /*position: relative;*/
-    /*clip-path: polygon(100% 100%, 0 100%, 50% 0);*/
+    height: 80vh;
+    background-image: linear-gradient(to right bottom, rgb(15, 231, 0), rgb(8, 0, 123));
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    clip-path: polygon(100% 100%, 0 100%, 50% 0);
 
 }
 
@@ -38,5 +38,6 @@ html, body {
 textarea {
     width: 300px;
     height: 200px;
+    margin-top: 40%;
 }
 
