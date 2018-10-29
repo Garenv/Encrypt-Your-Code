@@ -14,13 +14,12 @@ html, body {
 }
 
 .realEntire {
-    height: 80vh;
-    background-image: linear-gradient(to right bottom, rgb(15, 231, 0), rgb(8, 0, 123));
+    height: 70vh;
+    background-image: linear-gradient(to right bottom, rgb(231, 227, 229), rgb(17, 0, 255));
     background-size: cover;
-    background-position: top;
+    /*background-position: top;*/
     position: relative;
     clip-path: polygon(100% 100%, 0 100%, 50% 0);
-
 }
 
 .boxSkull {

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Main.css';
-import ButtonEncrpyt from '../../containers/ButtonEncrypt/ButtonEncrypt';
+import ButtonEncrpyt from '../../containers/Buttons/ButtonEncrypt/ButtonEncrypt';
 import Modal from '../../components/Modal/Modal';
 import Backdrop from '../../components/Backdrop/Backdrop';
 
@@ -116,12 +116,13 @@ class Main extends Component {
 
     render() {
         return(
-            <div className="realEntire">
-                <div className="entire">
-                    <body className="boxSkull">
+            <div className="outsideEntire">
+                <button>About</button>
+                    <div className="realEntire">
+                    <div className="entire">
+                        <body className="boxSkull">
                         <div className="boxSkeleton">
-                            {/*<h1 className="title">Encrypt your code</h1>*/}
-                            <textarea placeholder="type something" id="inputText" />
+                            <textarea placeholder="Enter your code" id="inputText" />
                             <br/>
                             <Modal
                                 show={this.state.modalIsOpen}
@@ -132,7 +133,8 @@ class Main extends Component {
                             <Backdrop show={this.state.modalIsOpen}/>
                             <ButtonEncrpyt clicked={() => {this.encrypt(); this.showModal()}}/>
                         </div>
-                    </body>
+                        </body>
+                    </div>
                 </div>
             </div>
         );

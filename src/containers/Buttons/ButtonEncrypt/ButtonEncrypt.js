@@ -3,7 +3,7 @@ import "./ButtonEncrypt.css";
 
 const buttonEncrypt = props => {
     return(
-        <button onClick={props.clicked}>Encrypt</button>
+        <button className="encButton" onClick={props.clicked}>Encrypt</button>
     );
 }
 
