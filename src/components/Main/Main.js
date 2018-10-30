@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import './Main.css';
+
 import ButtonEncrpyt from '../../containers/Buttons/ButtonEncrypt/ButtonEncrypt';
 import Modal from '../../components/Modal/Modal';
 import Backdrop from '../../components/Backdrop/Backdrop';
+import ButtonToScroll from '../../containers/Buttons/ButtonToScroll/ButtonToScroll';
 
 class Main extends Component {
     constructor(props) {
@@ -12,6 +14,7 @@ class Main extends Component {
             encryptedValue: null,
             modalIsOpen: false
         };
+        this.aboutRef = React.createRef();
     }
 
     encrypt = () => {
@@ -114,28 +117,34 @@ class Main extends Component {
         this.setState({modalIsOpen: false})
     };
 
+    scrollToAbout() {
+        return window.scrollTo(0, this.aboutRef.current.offsetTop);
+    }
+
     render() {
         return(
             <div className="outsideEntire">
-                <button>About</button>
+                <Modal
+                    show={this.state.modalIsOpen}
+                    showResult={this.state.encryptedValue}
+                    closed={this.closeModal}
+                    id="res"
+                />
+                <Backdrop show={this.state.modalIsOpen}/>
+                <ButtonToScroll clicked={() => this.scrollToAbout()}/>
                     <div className="realEntire">
-                    <div className="entire">
-                        <body className="boxSkull">
-                        <div className="boxSkeleton">
-                            <textarea placeholder="Enter your code" id="inputText" />
-                            <br/>
-                            <Modal
-                                show={this.state.modalIsOpen}
-                                showResult={this.state.encryptedValue}
-                                closed={this.closeModal}
-                                id="res"
-                            />
-                            <Backdrop show={this.state.modalIsOpen}/>
-                            <ButtonEncrpyt clicked={() => {this.encrypt(); this.showModal()}}/>
+                        <div className="entire">
+                            <body className="boxSkull">
+                                <div className="boxSkeleton">
+                                    <textarea placeholder="Enter your code" id="inputText" />
+                                    <ButtonEncrpyt clicked={() => {this.encrypt(); this.showModal()}}/>
+                                </div>
+                            </body>
                         </div>
-                        </body>
                     </div>
-                </div>
+                <p className="aboutText" ref={this.aboutRef}>
+                    It's extremely necessary to encrypt your code these days.  People out there are trying their very best to steal your well written code and use to their advantage without giving you any credit for it.  Code Encryption allows the user to enter the code of whatever language they’re using and encrypt it with a click of a button.
+                </p>
             </div>
         );
     }
