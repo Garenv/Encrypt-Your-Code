@@ -1,5 +1,6 @@
 .about {
     margin: auto;
+    /*margin-bottom: 40%;*/
     display: block;
     border: 1px solid #401818;
     background: #00ff6f;
@@ -22,7 +23,7 @@
     font-family: helvetica, serif;
     text-decoration: none;
     vertical-align: middle;
-    /*margin-top: 40%;*/
+
 }
 
 .about:hover {
