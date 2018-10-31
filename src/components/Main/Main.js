@@ -136,13 +136,11 @@ class Main extends Component {
                         <Backdrop show={this.state.modalIsOpen}/>
                         <ButtonToScroll clicked={() => this.scrollToAbout()}/>
                             <div className="realEntire">
-                                    <div className="entire">
-                                        <div className="boxSkeleton">
-                                            <textarea placeholder="Enter your code" id="inputText" />
-                                            <ButtonEncrpyt clicked={() => {this.encrypt(); this.showModal()}}/>
-                                        </div>
-                                    </div>
+                                <div className="boxSkeleton">
+                                    <textarea placeholder="Enter your code" id="inputText" />
+                                    <ButtonEncrpyt clicked={() => {this.encrypt(); this.showModal()}}/>
                                 </div>
+                            </div>
                             <p className="aboutText" ref={this.aboutRef}>
                                 It's extremely necessary to encrypt your code these days.
                                 People out there are trying their very best to steal your well written code and
