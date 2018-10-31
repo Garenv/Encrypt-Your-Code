@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="15b22c17-b2fe-4c96-923c-f8ac4ad31014" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main/Main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,8 +20,8 @@
       <file leaf-file-name="Main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Main/Main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="142" column="28" selection-start-line="142" selection-start-column="28" selection-end-line="142" selection-end-column="28" />
+            <state relative-caret-position="1491">
+              <caret line="151" column="22" lean-forward="true" selection-start-line="151" selection-start-column="22" selection-end-line="151" selection-end-column="22" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -30,11 +29,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="222">
+              <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Main/Main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="51" selection-end-column="1" />
+            <state relative-caret-position="295">
+              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
             </state>
           </provider>
         </entry>
@@ -90,6 +98,7 @@
         <option value="$PROJECT_DIR$/src/containers/Buttons/ButtonToScroll/ButtonToScroll.css" />
         <option value="$PROJECT_DIR$/src/components/Main/Main.js" />
         <option value="$PROJECT_DIR$/src/components/Main/Main.css" />
+        <option value="$PROJECT_DIR$/public/index.html" />
       </list>
     </option>
   </component>
@@ -251,18 +260,18 @@
       <workItem from="1540403819725" duration="9674000" />
       <workItem from="1540434981985" duration="6937000" />
       <workItem from="1540657797061" duration="9134000" />
-      <workItem from="1540819992974" duration="23909000" />
+      <workItem from="1540819992974" duration="24962000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64776000" />
+    <option name="totallyTimeSpent" value="65829000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="748" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25416997" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25416997" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
@@ -271,7 +280,7 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32258064" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32258064" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -662,25 +671,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
+    <entry file="file://$PROJECT_DIR$/src/components/Main/Main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-259" />
+        <state relative-caret-position="295">
+          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Main/Main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="142" column="28" selection-start-line="142" selection-start-column="28" selection-end-line="142" selection-end-column="28" />
+        <state relative-caret-position="1491">
+          <caret line="151" column="22" lean-forward="true" selection-start-line="151" selection-start-column="22" selection-end-line="151" selection-end-column="22" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Main/Main.css">
+    <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="51" selection-end-column="1" />
+        <state relative-caret-position="222">
+          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
         </state>
       </provider>
     </entry>
