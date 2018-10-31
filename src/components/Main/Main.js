@@ -125,7 +125,7 @@ class Main extends Component {
     render() {
         return(
             <Aux>
-                <body className="boxSkull">
+                <div className="boxSkull">
                     <div className="outsideEntire">
                         <Modal
                             show={this.state.modalIsOpen}
@@ -144,10 +144,22 @@ class Main extends Component {
                                     </div>
                                 </div>
                             <p className="aboutText" ref={this.aboutRef}>
-                               random text
+                                It's extremely necessary to encrypt your code these days.
+                                People out there are trying their very best to steal your well written code and
+                                use it to their advantage without giving you any credit for it.
+                                Code Encryption allows the user to enter
+                                the code of whatever language they’re using and encrypt it with a click of a button.
                             </p>
                     </div>
-                </body>
+                </div>
+                <hr/>
+                <footer>
+                    <div className="wrap">
+                        <nav>
+                            <h3>Created by Garen Vartanian</h3>
+                        </nav>
+                    </div>
+                </footer>
             </Aux>
         );
     }

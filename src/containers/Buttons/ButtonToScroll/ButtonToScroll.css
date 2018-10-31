@@ -1,6 +1,5 @@
 .about {
     margin: auto;
-    /*margin-bottom: 40%;*/
     display: block;
     border: 1px solid #401818;
     background: #00ff6f;
@@ -18,12 +17,13 @@
     -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
     box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
     text-shadow: #bd7f7f 0 1px 0;
-    color: #066b12;
     font-size: 15px;
     font-family: helvetica, serif;
     text-decoration: none;
     vertical-align: middle;
-
+    position: relative;
+    top: -120px;
+    color: black;
 }
 
 .about:hover {

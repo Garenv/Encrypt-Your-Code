@@ -1,5 +1,5 @@
 .encButton {
-    border: 1px solid #2b1840;
+    border: 5px solid #2b1840;
     background: #ffdd00;
     background: -webkit-gradient(linear, left top, left bottom, from(#fa0000), to(#ffdd00));
     background: -webkit-linear-gradient(top, #fa0000, #ffdd00);
@@ -21,7 +21,6 @@
     text-decoration: none;
     vertical-align: middle;
     margin-top: 5%;
-
 }
 
 .encButton:hover {
@@ -39,7 +38,7 @@
 
 .encButton:active {
     text-shadow: #ff0000 0 1px 0;
-    border: 1px solid #0900ff;
+    border: 1px solid #ff0e28;
     background: #98d665;
     background: -webkit-gradient(linear, left top, left bottom, from(#ffbf00), to(#0900ff));
     background: -webkit-linear-gradient(top, #ffbf00, #98d665);
